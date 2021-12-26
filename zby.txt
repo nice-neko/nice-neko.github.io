@@ -104,6 +104,9 @@ CCTV17 SD,http://39.135.129.163/hwottcdn.ln.chinamobile.com/PLTV/-/224/322122690
 南方卫视上星版,http://39.134.24.24/PLTV/88888888/224/3221225871/index.m3u8
 珠江卫视,http://39.135.34.142:8080/000000001000/1000000004000011655/1.m3u8?
 南方卫视上星版,http://39.135.34.142:8080/000000001000/1000000002000011619/1.m3u8?
+南方卫视,http://120.237.254.197/stream1.grtn.cn/tvs2/sd/live.m3u8
+嘉佳卡通,http://120.237.254.197/stream1.grtn.cn/jjkt/sd/live.m3u8
+北京卡酷少儿，http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s10/index.m3u8
 南方卫视,http://hongyanqiang.top/chudian.php?id=nfws
 南方卫视,http://39.136.18.76/cdnrrs.gz.chinamobile.com/PLTV/88888888/224/3221225738/1/index.m3u8?fmt=ts2hls
 广东体育HD,http://116.199.5.51:8114/00000000/index.m3u8?&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=5abd1660af1babb4&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=8&Fsv_rate_id=0&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=&Fsv_CMSID=&Fsv_otype=1
