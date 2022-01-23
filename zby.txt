@@ -100,6 +100,7 @@ CCTV13 SD,http://39.135.129.167/hwottcdn.ln.chinamobile.com/PLTV/-/224/322122672
 CCTV17 SD,http://39.135.129.163/hwottcdn.ln.chinamobile.com/PLTV/-/224/3221226866/index.m3u8
 CCTV17 SD,http://39.135.129.163/hwottcdn.ln.chinamobile.com/PLTV/-/224/3221226908/index.m3u8
 地方频道,#genre#
+八佰,https://209zy.youkutv.cc/2020/11/01/pYnQ8Ce2FWToxV46/playlist.m3u8
 南方卫视上星版,http://223.110.246.70/ott.js.chinamobile.com/PLTV/4/224/3221227005/index.m3u8?
 南方卫视上星版,http://39.134.24.24/PLTV/88888888/224/3221225871/index.m3u8
 珠江卫视,http://39.135.34.142:8080/000000001000/1000000004000011655/1.m3u8?
