@@ -513,6 +513,7 @@ SKYnews,https://skynews2-plutolive-vo.akamaized.net/cdhlsskynewsamericas/1013/05
 香港鬼片,http://148.70.143.24/cms/yslb/yunshitv/wangyouzhibo/bilibili.php?tvplay=193
 邵氏电影,http://148.70.143.24/cms/yslb/yunshitv/wangyouzhibo/douyu.php?tvplay=4246519
 林正英,http://148.70.143.24/cms/yslb/yunshitv/wangyouzhibo/douyu.php?tvplay=218859
+林正英,http://36.152.73.115/tx.flv.huya.com/src/1394575543-1394575543-5989656348986441728-2789274542-10057-A-0-1.flv
 斗鱼4K,http://148.70.143.24/cms/yslb/yunshitv/wangyouzhibo/douyu.php?tvplay=9249162
 斗鱼4K,http://epg.112114.xyz/douyu/9249162
 斗鱼4K,http://080880qazwsx.ve5.aihost10.top/dy.php?id=9249162
