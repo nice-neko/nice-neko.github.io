@@ -110,6 +110,7 @@ CCTV17 SD,http://39.135.129.163/hwottcdn.ln.chinamobile.com/PLTV/-/224/322122690
 北京卡酷少儿，http://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s10/index.m3u8
 南方卫视,http://hongyanqiang.top/chudian.php?id=nfws
 南方卫视,http://112.74.200.9:88/tv000000/m3u8.php?/iTouchTV/1197
+南方卫视,http://117.148.179.160/PLTV/88888888/224/3221231661/index.m3u8
 广东体育HD,http://116.199.5.51:8114/00000000/index.m3u8?&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=5abd1660af1babb4&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=8&Fsv_rate_id=0&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=&Fsv_CMSID=&Fsv_otype=1
 广东体育HD,http://hongyanqiang.top/chudian.php?id=gdty
 广东珠江,http://hongyanqiang.top/chudian.php?id=gdzj
