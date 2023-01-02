@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>核酸检测查询</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport"
+    content="width=device-width,height=device-height,viewport-fit=cover,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <meta name="theme-color" content="#0bae81">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="icon" type="image/png" href="./static/myCode/greenLogo.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" sizes="145x144" href="./static/myCode/greenLogo.png">
+  <link rel="stylesheet" href="../common/nav.css">
+  <link rel="stylesheet" type="text/css" href="./static/css/main-menu.css">
+  <link rel="stylesheet" type="text/css" href="./static/css/index.css">
+  <link rel="stylesheet" type="text/css" href="./static/css/u-image.css">
+  <link rel="stylesheet" type="text/css" href="./static/css/app.css">
+  <link rel="stylesheet" type="text/css" href="./static/css/qrcode.css">
+  <link rel="stylesheet" type="text/css" href="./static/css/nucResult.css">
+  <script src="../common/base.js"></script>
+</head>
+
+<body>
+  <view class="navbar navbar--wechat navbar--wechat-alternative">
+    <view class="navbar__placeholder"></view>
+    <view class="navbar__inner" style="background:#0bae81">
+      <view class="navbar__left">
+        <view class="navbar__buttons" onclick="history.back()">
+          <view class="navbar__button-goback"></view>
+        </view>
+      </view>
+      <view class="navbar__center"><text>核酸检测查询</text></view>
+      <view class="navbar__right"></view>
+    </view>
+    <view class="capsule capsule--wechat capsule--alternative" onclick="navigateHome()"><svg class="capsule__menu-icon"
+        viewBox="0 0 64 28" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="32" cy="14" r="9.5"></circle>
+        <circle cx="54" cy="14" r="6"></circle>
+        <circle cx="10" cy="14" r="6"></circle>
+      </svg>
+      <view class="capsule__splitter"></view><svg class="capsule__exit-icon" viewBox="0 0 60 60"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="9"></circle>
+        <circle cx="30" cy="30" r="23" stroke-width="6" fill="transparent"></circle>
+      </svg>
+    </view>
+  </view>
+  <view class="page-view nuc data-v-17195bd9">
+    <view class="bg data-v-17195bd9">核酸检测结果由各医院和检测机构提供，纸质检验报告到检测单位获取</view>
+    <view class="nuc-content data-v-17195bd9">
+      <view class="data-v-17195bd9">
+        <view class="data-v-17195bd9 today-result succuss">
+          <view class="t-icon t-icon-duigouxiao  data-v-17195bd9"></view>
+          <text class="data-v-17195bd9" style="font-size:4.267vw">24小时内核酸采样已完成</text>
+        </view>
+      </view>
+      <view class="Chinese-English data-v-17195bd9">
+        <view class="tic data-v-17195bd9">48小时内核酸检测信息</view>
+      </view>
+      <view class="reportTip data-v-17195bd9">（以出具报告时间为准）</view>
+  
+      <view class="nuc-item data-v-224fe6b7">
+        <view class="data-v-224fe6b7">
+          <view class="info data-v-224fe6b7">
+            <view class="cell data-v-224fe6b7">
+              <view class="label data-v-224fe6b7">姓名</view>
+              <text class="va data-v-224fe6b7" id="name"></text>
+            </view>
+            <view class="cell data-v-224fe6b7">
+              <view class="label data-v-224fe6b7">关系</view>
+              <text class="va data-v-224fe6b7">本人</text>
+            </view>
+            <view class="cell data-v-224fe6b7">
+              <view class="label data-v-224fe6b7">证件号码</view>
+              <text class="va data-v-224fe6b7" id="idcard"></text>
+            </view>
+            <view class="data-v-224fe6b7 result t-icon t-icon-yinxing1"></view>
+            <view class="ci l_ci data-v-224fe6b7"></view>
+            <view class="ci r_ci data-v-224fe6b7"></view>
+          </view>
+          <view class="address data-v-224fe6b7">
+            <view class="item data-v-224fe6b7">
+              <text class="label data-v-224fe6b7">采样时间:</text>
+              <text class="data-v-224fe6b7" id="sample-time"></text>
+              
+            </view>
+            <view class="item data-v-224fe6b7">
+              <text class="label data-v-224fe6b7">检测时间:</text>
+              <text class="data-v-224fe6b7" id="test-time"></text>
+            </view>
+            <view class="data-v-224fe6b7">
+              <text class="label data-v-224fe6b7">检测机构:</text>
+              <text class="data-v-224fe6b7" id="test-institution"></text>
+            </view>
+            
+          </view>
+        </view>
+      </view>
+      <view class="other-provinces data-v-17195bd9">
+        <text class="mini-btn buttonStyle data-v-17195bd9" disabled="true" plain="true" size="mini" color="#3DA2FF" text-align="center" type="warn">查询外省市核酸检测结果并上传陕西一码通</text>
+      </view>
+  
+      <view class="data-v-17195bd9">
+        <view class="box data-v-17195bd9">
+          <text class="show-tit data-v-17195bd9">近14天全部核酸检测结果</text>
+          <view class="u-icon__icon data-v-2ee87dc9 uicon-arrow-down"></view>
+        </view>
+      </view>
+    </view>
+    <view class="tips-b data-v-17195bd9">
+      <view class="data-v-17195bd9">核酸和抗体检测数据在不断汇聚和完善中</view>
+      <view class="data-v-17195bd9">查询结果仅供参考</view>
+    </view>
+    <view class="bottom-btn data-v-17195bd9">
+      <view class="t-icon t-icon-wenti data-v-17195bd9"></view>
+      <text class="data-v-17195bd9">核酸检测结果异常帮助文档</text>
+    </view>
+  </view>
+  <script>
+    // addStorageField("_sample_time", "#sample-time", "采样时间", "2022-11-28 08:12:33");
+    // addStorageField("_test_time", "#test-time", "检测时间", "2022-11-28 08:12:33");
+    setStaticTime("#sample-time", 0, 19, 20, 8);
+    setStaticTime("#test-time", 0, 19, 12, 8);
+    addStorageField("_test_institution", "#test-institution", "检测机构", "西安中美弘康医学检验实验室");
+    addStorageField('_name', '#name', '姓名', '习近平', presetFilters.name_preferfirstname);
+    addStorageField('_idcard', '#idcard', '证件号码', '110101195306153019', presetFilters.idcard(1, 2));
+    initServiceWorker('shaanxi-hc');
+  </script>
+</body>
+
+</html>

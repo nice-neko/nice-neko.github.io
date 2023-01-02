@@ -1,0 +1,220 @@
+.page-view.data-v-17195bd9 {
+    background: #f7f7f7;
+    min-height: 100vh;
+    position: relative;
+  }
+  .nuc.data-v-17195bd9 {
+    padding-bottom: 26.667vw;
+  }
+  .nuc .bg.data-v-17195bd9 {
+    background: #0bae81;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 3.733vw;
+    height: 18.133vw;
+    padding: 2.667vw 3.733vw;
+  }
+  .nuc .nuc-content.data-v-17195bd9 {
+    background-color: #f7f7f7;
+    border-radius: 2.667vw 2.667vw 0 0;
+    margin-top: -2.667vw;
+    padding: 2.667vw 3.733vw 0;
+  }
+  
+  .nuc .nuc-content .Chinese-English.data-v-17195bd9 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.667vw;
+  }
+  
+  .nuc .nuc-content .Chinese-English .tic.data-v-17195bd9 {
+    color: #000;
+    font-size: 4.267vw;
+    font-weight: 600;
+  }
+  .nuc .reportTip.data-v-17195bd9 {
+    color: #a6a6a6;
+    font-family: PingFangSC-Regular,PingFang SC;
+    font-size: 3.2vw;
+    font-weight: 400;
+    line-height: 5.333vw;
+    margin-bottom: 8px;
+  }
+  
+  .nuc .today-result.data-v-17195bd9 {
+    align-items: center;
+    border-radius: 2.667vw;
+    display: flex;
+    font-size: 4.8vw;
+    font-weight: 600;
+    height: 13.867vw;
+    justify-content: center;
+  }
+  .nuc .today-result .t-icon.data-v-17195bd9 {
+    height: 4.8vw;
+    margin-right: 1.6vw;
+    width: 4.8vw;
+  }
+  
+  .nuc .today-result.succuss.data-v-17195bd9 {
+    background-color: #e0f7f1;
+    color: #0bae81;
+  }
+  
+  .nuc .buttonStyle.data-v-17195bd9 {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #3da2ff;
+    font-size: 3.733vw;
+    height: 8vw;
+    line-height: 8vw;
+    padding: 1.067vw 6.4vw;
+    width: 100%;
+  }
+  
+ 
+  
+  .nuc-item.data-v-224fe6b7 {
+    background: #fff;
+    border-radius: 2.667vw;
+    margin-bottom: 2.667vw;
+    }
+    
+    .nuc-item .info.data-v-224fe6b7 {
+    border-bottom: 0.267vw dashed #a6a6a6;
+    font-size: 4.267vw;
+    padding: 2.933vw 0;
+    position: relative;
+    }
+    
+    .nuc-item .info .cell.data-v-224fe6b7 {
+    display: flex;
+    padding: 1.867vw 3.733vw;
+    }
+    
+    .nuc-item .info .label.data-v-224fe6b7 {
+    color: #a6a6a6;
+    width: 22.4vw;
+    }
+    
+    .nuc-item .info .va.data-v-224fe6b7 {
+    color: #343434;
+    }
+    
+    .nuc-item .info .result.data-v-224fe6b7 {
+    height: 22.4vw;
+    position: absolute;
+    right: 4vw;
+    top: 4vw;
+    width: 22.4vw;
+    }
+    
+    .nuc-item .info .ci.data-v-224fe6b7 {
+    background-color: #f7f7f7;
+    bottom: -2.667vw;
+    height: 5.333vw;
+    position: absolute;
+    width: 5.333vw;
+    }
+    
+    .nuc-item .info .ci.l_ci.data-v-224fe6b7 {
+    border-radius: 0 50% 50% 0;
+    left: -2.667vw;
+    }
+    
+    .nuc-item .info .ci.r_ci.data-v-224fe6b7 {
+    border-radius: 50% 0 0 50%;
+    right: -2.667vw;
+    }
+    
+    .nuc-item .address.data-v-224fe6b7 {
+    color: #a6a6a6;
+    font-size: 3.733vw;
+    padding: 4.8vw 3.733vw;
+    }
+    
+    .nuc-item .address .item.data-v-224fe6b7 {
+    margin-bottom: 1.6vw;
+    }
+    
+    .nuc-item .address .label.data-v-224fe6b7 {
+    padding-right: 2.667vw;
+    }
+    
+    
+  .other-provinces.data-v-17195bd9 {
+    background: #fff;
+    border-radius: 2.667vw;
+    color: #3da2ff;
+    font-size: 3.733vw;
+    font-weight: 400;
+    margin-bottom: 2.133vw;
+    padding: 3.2vw 0;
+    text-align: center;
+  
+  }
+  
+  .nuc .box.data-v-17195bd9 {
+    background: #fff;
+    border-radius: 2.133vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.667vw;
+    padding: 3.467vw 4.133vw;
+  }
+  
+  .nuc .show-tit.data-v-17195bd9 {
+    color: #343434;
+    padding-right: 1.067vw;
+  }
+  
+  
+  @font-face {
+    font-family:uicon-iconfont;src:url("https://at.alicdn.com/t/font_2225171_8kdcwk4po24.ttf") format("truetype");
+  }
+  .u-icon__icon.data-v-2ee87dc9 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-family: uicon-iconfont;
+    position: relative;
+  }
+
+  .nuc .tips-b.data-v-17195bd9 {
+    color: #a6a6a6;
+    font-size: 3.2vw;
+    line-height: 1.8;
+    padding: 0 0 18.667vw;
+    text-align: center;
+  }
+  .nuc .bottom-btn.data-v-17195bd9 {
+    align-items: center;
+    color: #ff9500;
+    font-size: 4.267vw;
+    justify-content: center;
+  }
+  
+  .nuc .bottom-btn .t-icon.data-v-17195bd9 {
+    height: 4.267vw;
+    margin-right: 0.8vw;
+    width: 4.267vw;
+  }
+  
+  .bottom-btn.data-v-17195bd9 {
+    align-items: center;
+    background: #fff;
+    bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: calc(16.533vw + env(safe-area-inset-bottom));
+    justify-content: space-between;
+    left: 0;
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: 4.533vw;
+    padding-right: 4.533vw;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+  }
+  

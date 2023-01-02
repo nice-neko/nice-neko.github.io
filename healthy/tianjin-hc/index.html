@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang=en><head><title>天津数字防疫</title><meta http-equiv=Content-Type content="text/html;charset=UTF-8"><meta name=viewport content="width=device-width,height=device-height,viewport-fit=cover,initial-scale=1,maximum-scale=1,user-scalable=0"><meta name=theme-color content=#004FFF><meta name=apple-mobile-web-app-status-bar-style content=black-translucent><link rel=manifest href=manifest.json><link rel=icon type=image/png href=./static/img/logo.png><link rel=apple-touch-icon href=./static/img/logo.png><script src=../common/base.js></script><style>* {
+        box-sizing: border-box;
+      }
+      .scan-wrapper {
+        visibility: hidden;
+      }
+      #scan {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        background: radial-gradient(circle, rgba(93,200,148,1) 0%, rgba(0,0,0,0) 50%);
+      }
+      #scan-parent {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 30%;
+        transform: scale(1, 0.2);
+        overflow: hidden;
+        animation: scan 2s linear infinite, opacity 1s ease-out infinite alternate;
+        z-index: 30;
+      }
+      @keyframes scan {
+        from {
+          bottom: 40%;
+        }
+        to {
+          bottom: -20%;
+        }
+      }
+      @keyframes opacity {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      #mask {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, .2);
+        z-index: 10;
+      }
+      #scan-widgets > * {
+        z-index: 20;
+      }
+      #close-button {
+        position: fixed;
+        top: 36px;
+        top: calc(36px + env(safe-area-inset-top, 0));
+        left: 30px;
+        height: 26px;
+        width: 26px;
+        border-radius: 100px;
+        background-color: #fff;
+        color: rgba(0, 0, 0, .6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #album-button {
+        position: fixed;
+        right: 30px;
+        bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: rgba(255, 255, 255, .87);
+        font-size: 14px;
+      }
+      #album-button > div {
+        height: 48px;
+        width: 48px;
+        border-radius: 50px;
+        background-color: rgba(0, 0, 0, .4);
+        margin-bottom: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      video {
+        position: fixed;
+        top: 0;
+      }
+
+      body.scanner-active .scan-wrapper {
+        visibility: visible;
+      }
+      body.scanner-active #app {
+        background: transparent;
+        visibility: hidden;
+      }</style><link href=/tianjin-hc/static/css/chunk-058132aa.60a88c55.css rel=prefetch><link href=/tianjin-hc/static/css/chunk-10aabacd.0c0f497d.css rel=prefetch><link href=/tianjin-hc/static/css/chunk-48084dec.15052ed4.css rel=prefetch><link href=/tianjin-hc/static/css/chunk-4a6c042c.c61d4756.css rel=prefetch><link href=/tianjin-hc/static/css/chunk-7162b29a.a3cf78e6.css rel=prefetch><link href=/tianjin-hc/static/css/chunk-729dcadd.c112cd15.css rel=prefetch><link href=/tianjin-hc/static/css/chunk-7cef904f.61e7a339.css rel=prefetch><link href=/tianjin-hc/static/css/chunk-b6c841ba.1a0699ea.css rel=prefetch><link href=/tianjin-hc/static/js/chunk-058132aa.59160687.js rel=prefetch><link href=/tianjin-hc/static/js/chunk-10aabacd.c4180356.js rel=prefetch><link href=/tianjin-hc/static/js/chunk-15920e85.91c40b35.js rel=prefetch><link href=/tianjin-hc/static/js/chunk-2d0aba8a.97b14652.js rel=prefetch><link href=/tianjin-hc/static/js/chunk-2d0e6128.22197f0b.js rel=prefetch><link href=/tianjin-hc/static/js/chunk-2d0e93c0.e5590f8d.js rel=prefetch><link href=/tianjin-hc/static/js/chunk-48084dec.26aed5d0.js rel=prefetch><link href=/tianjin-hc/static/js/chunk-4a6c042c.481dfff5.js rel=prefetch><link href=/tianjin-hc/static/js/chunk-7162b29a.d5c616bc.js rel=prefetch><link href=/tianjin-hc/static/js/chunk-729dcadd.37078fff.js rel=prefetch><link href=/tianjin-hc/static/js/chunk-784448d2.2ff3b8e1.js rel=prefetch><link href=/tianjin-hc/static/js/chunk-7cef904f.47e43f2e.js rel=prefetch><link href=/tianjin-hc/static/js/chunk-b6c841ba.7f570979.js rel=prefetch><link href=/tianjin-hc/static/css/index.69aca790.css rel=preload as=style><link href=/tianjin-hc/static/js/index.abc09dc0.js rel=preload as=script><link href=/tianjin-hc/static/css/index.69aca790.css rel=stylesheet></head><body><noscript><strong>We're sorry but Webpack App doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><audio id=qrcode-found style="display: none;" src=./qrcode_found.wav></audio><div id=scan-wrapper class=scan-wrapper><video id=scanner-camera width=auto height=100% autoplay muted playsinline></video><div id=mask></div><div id=scan-parent><div id=scan></div></div><div id=scan-widgets><div id=close-button onclick=""><svg xmlns=http://www.w3.org/2000/svg height=14px viewBox="0 0 24 24" width=14px fill="rgba(0, 0, 0, .6)"><path d="M0 0h24v24H0V0z" fill=none /><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg></div><div id=album-button><div><svg xmlns=http://www.w3.org/2000/svg height=28px viewBox="0 0 24 24" width=28px fill="rgba(255, 255, 255, .87)"><path d="M0 0h24v24H0V0z" fill=none /><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"/></svg></div><span>相册</span></div></div></div><script>const video = document.querySelector("#scanner-camera")
+      function openScanner() {
+        if (navigator.mediaDevices) {
+          document.querySelector('body').classList.add('scanner-active');
+
+          navigator.mediaDevices.getUserMedia({
+            audio: false,
+            video: {
+              facingMode: "environment",
+            }
+          })
+          .then((stream) => {
+            video.srcObject = stream;
+            video.onloadedmetadata = () => {
+              video.play();
+            };
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+        }
+      }
+      function closeScanner() {
+        video.srcObject && video.srcObject.getTracks().forEach(function(track) {
+          track.stop();
+        });
+        document.querySelector('body').classList.remove('scanner-active');
+      }
+
+      document.getElementById("scan-wrapper").addEventListener("click", closeScanner);</script><script>initServiceWorker("tianjin-hc");</script><script src=/tianjin-hc/static/js/index.abc09dc0.js></script></body></html>

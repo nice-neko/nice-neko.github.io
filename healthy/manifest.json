@@ -1,16 +1,16 @@
 {
-  "short_name": "穗康码",
-  "name": "穗康码",
+  "short_name": "健康码",
+  "name": "健康码",
   "icons": [
     {
-      "src": "static/logo.png",
-      "type": "image/png",
-      "sizes": "140x140"
+      "src": "common/images/logo.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
     }
   ],
-  "id": "ilovexjp-gwongzau-hc-simulator",
-  "start_url": "./checkin.html",
+  "id": "ilovexjp-index",
+  "start_url": ".",
   "display": "standalone",
   "scope": "/",
-  "description": "穗康码模拟"
+  "description": "健康码模拟"
 }
